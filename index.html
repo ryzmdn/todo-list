@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Todo List</h1>
+        <p class="subtitle">Create any new tasks you will do in the future or notes to remember what you will do.</p>
+        
+        <label for="newTodo">Create a new task</label>
+        <textarea type="text" id="newTodo" name="newTodo" autocomplete="off" spellcheck="false" maxlength="2000" onkeypress="handleTextarea(event)"></textarea>
+        <p id="textarea-info">You just need to press <kbd>Enter</kbd> on your keyboard to create a new task.</p>
+      </header>
+      <section>
+        <ul id="todos"></ul>
+        <div id="no-todo">No tasks have been added yet</div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
